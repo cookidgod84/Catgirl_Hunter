@@ -1,0 +1,5 @@
+Row Name,tile_id,tile_material,tile_mesh,tile_weighting,allowed_north_tiles,allowed_east_tiles,allowed_south_tiles,allowed_west_tiles
+grass,0,/Script/Engine.Material'/Game/Tilesets/demotileset/grassmat.grassmat',/Script/Engine.StaticMesh'/Game/Tilesets/demotileset/tilemesh.tilemesh',1,"(0,1,3)","(0,1,3)","(0,1,3)","(0,1,3)"
+sand,1,/Script/Engine.Material'/Game/Tilesets/demotileset/sandmat.sandmat',/Script/Engine.StaticMesh'/Game/Tilesets/demotileset/tilemesh.tilemesh',1,"(0,1,2,3)","(0,1,2,3)","(0,1,2,3)","(0,1,2,3)"
+ocean,2,/Script/Engine.Material'/Game/Tilesets/demotileset/seamat.seamat',/Script/Engine.StaticMesh'/Game/Tilesets/demotileset/tilemesh.tilemesh',1,"(1,2,3)","(1,2,3)","(1,2,3)","(1,2,3)"
+universal,3,/Script/Engine.Material'/Game/Tilesets/demotileset/universalmat.universalmat',/Script/Engine.StaticMesh'/Game/Tilesets/demotileset/tilemesh.tilemesh',1,"(0,1,2,3)","(0,1,2,3)","(0,1,2,3)","(0,1,2,3)"
