@@ -1,0 +1,10 @@
+Top down roguelike with a similar game loop to "Vampire Survivors" 
+Primarily being developed for the sake of personal experience (this is the sole reason it is an Unreal project and not Unity or Godot)
+
+Copyright links for placeholder assets:
+
+demo_cracked_vase sprites  
+"Assets by VerzatileDev, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
+
+demo_bat sprites  
+"https://www.patreon.com/elthen"
