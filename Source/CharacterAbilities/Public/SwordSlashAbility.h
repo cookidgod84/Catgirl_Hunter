@@ -3,18 +3,24 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
-#include "SwordAbility.generated.h"
+#include "PaperFlipbookComponent.h"
+#include "PaperFlipbook.h"
+#include "SwordSlashAbility.generated.h"
 
-
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class CHARACTERABILITIES_API USwordAbility : public UActorComponent
+/**
+ * 
+ */
+UCLASS()
+class CHARACTERABILITIES_API USwordSlashAbility : public UPaperFlipbookComponent
 {
 	GENERATED_BODY()
-
-public:	
+public:
 	// Sets default values for this component's properties
-	USwordAbility();
+	USwordSlashAbility();
+
+private:
+	UPROPERTY(EditAnywhere)
+	UPaperFlipbook* flipbook;
 	const float defaulttimeperswing = 1000;
 	float currenttimeperswing = defaulttimeperswing;
 	float swordswingtimer = 0;
@@ -23,9 +29,8 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	void SwingSword();
-		
 };

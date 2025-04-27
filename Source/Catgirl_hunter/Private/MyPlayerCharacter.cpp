@@ -13,7 +13,6 @@
 #include "Materials/Material.h"
 #include "PaperCharacter.h"
 #include "BaseEnemy.h"
-#include "GameScreenUI.h"
 #include "Engine/World.h"
 
 
@@ -63,6 +62,9 @@ AMyPlayerCharacter::AMyPlayerCharacter()
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 	GetCapsuleComponent()->OnComponentHit.AddDynamic(this, &AMyPlayerCharacter::OnCompHit);
 	GetCapsuleComponent()->SetNotifyRigidBodyCollision(true);
+	
+	//add base character ability
+	//characterabilities.Add("swordslash", CreateDefaultSubobject<USwordSlashAbility>(TEXT("SwordSlash")));
 
 }
 
@@ -88,7 +90,6 @@ bool AMyPlayerCharacter::DamageCharacter(int damage)
 {
 	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("character damaged"));
 		CurrentHealth -= damage;
-		HUD->UpdateCharacterHearts(CurrentHealth);
 		if (CurrentHealth <= 0) {
 			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("character killed"));
 		}

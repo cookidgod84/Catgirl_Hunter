@@ -8,6 +8,6 @@ public class Catgirl_hunter : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "NavigationSystem", "Paper2D", "AIModule", "Niagara", "EnhancedInput", "Enemies" });
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "NavigationSystem", "Paper2D", "AIModule", "Niagara", "EnhancedInput", "Enemies", "CharacterAbilities" });
     }
 }

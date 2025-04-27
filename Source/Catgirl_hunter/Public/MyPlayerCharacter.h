@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "PaperCharacter.h"
 #include "PaperFlipbook.h"
+#include "SwordSlashAbility.h"
 #include "MyHUD.h"
 #include "MyPlayerCharacter.generated.h"
 
@@ -39,6 +40,8 @@ private:
 	/** Camera boom positioning the camera above the character */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraBoom;
+
+	TMap<FString, UPaperFlipbookComponent*> characterabilities;
 
 	class AMyHUD* HUD;
 

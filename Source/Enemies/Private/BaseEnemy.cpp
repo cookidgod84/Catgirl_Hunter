@@ -14,7 +14,7 @@ ABaseEnemy::ABaseEnemy()
 	movementcomponent = CreateDefaultSubobject<UBaseEnemyMovementComponent>(TEXT("BaseEnemyMoveComponent"));
 	movementcomponent->UpdatedComponent = RootComponent;
 	
-	collisioncomponent = CreateDefaultSubobject<USphereComponent>(TEXT("BaseEnemtCollisionComponent"));
+	collisioncomponent = CreateDefaultSubobject<USphereComponent>(TEXT("BaseEnemyCollisionComponent"));
 	collisioncomponent->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Block);
 	collisioncomponent->SetNotifyRigidBodyCollision(true);
 	collisioncomponent->SetSphereRadius(10);

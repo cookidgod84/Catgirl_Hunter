@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameScreenUI.h"
+#include "MainGameLoopUI.h"
 #include "GameFramework/HUD.h"
 #include "MyHUD.generated.h"
 
@@ -16,11 +16,7 @@ class CATGIRL_HUNTER_API AMyHUD : public AHUD
 	GENERATED_BODY()
 public:
 	virtual void BeginPlay() override;
-	void UpdateCharacterHearts(int newcharacterhealth);
-
 private:
-	UPROPERTY(EditAnywhere)
-	TSubclassOf<class UGameScreenUI> GameScreenUIClass;
-	UPROPERTY()
-	class UGameScreenUI* GameScreenUIInstance;
+	
+	
 };
