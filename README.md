@@ -8,3 +8,9 @@ demo_cracked_vase sprites
 
 demo_bat sprites  
 "https://www.patreon.com/elthen"
+
+swordslash
+https://spikerman.itch.io/
+
+bomb ability explosion
+https://itch.io/profile/ansimuz
