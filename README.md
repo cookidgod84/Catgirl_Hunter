@@ -14,3 +14,9 @@ https://spikerman.itch.io/
 
 bomb ability explosion
 https://itch.io/profile/ansimuz
+
+knife
+https://josupixel.itch.io/
+
+blowtorch fire
+https://klenchandrei.itch.io/
