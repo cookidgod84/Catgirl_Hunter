@@ -20,3 +20,9 @@ https://josupixel.itch.io/
 
 blowtorch fire
 https://klenchandrei.itch.io/
+
+hammer
+https://galekm.itch.io/
+
+chisel
+https://pixelartmaker.com/art/eb65da81ef3765f
